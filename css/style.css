@@ -1,0 +1,46 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+.cell {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+
+.cell img {
+    width: 25px;
+    height: auto;
+}
+
+.floor {
+    background-color: gray;
+}
+
+.wall {
+    background-color: brown;
+}
+
+.ballcollected {
+font-size: 30px;
+display: inline;
+
+}
+
+.ballcollectedheader {
+    display: inline;
+    font-size: 30px;
+
+
+}
+
+
+.neighbor {
+
+    display: inline;
+    font-size: 30px;
+
+
+
+}
