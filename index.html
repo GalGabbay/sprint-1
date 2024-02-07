@@ -8,14 +8,20 @@
 
 </head>
 <body onkeyup="onHandleKey(event)" onload="onInit()">
-	<h2>Score: <span class="score">0</span></h2>
+	<h4>Score: <span class="score">0</span></h4>
+	<div class="game-level">
+		<h3>Game Level:</h3>
+		<button class="btn-level" onclick="onSetLevel(4)">4</button>
+		<button class="btn-level" onclick="onSetLevel(8)">8</button>
+		<button class="btn-level" onclick="onSetLevel(12)">12</button>
+	</div>
+
 
 	<table class="board-container">
 		<tbody class="board"></tbody>
 	</table>
-
 	
 
 	<script src="js/util.js"></script>
-	<script src="js/app.js"></script></body>
+	<script src="js/main.js"></script></body>
 </html>

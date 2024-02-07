@@ -14,11 +14,37 @@ table {
 .cell {
     width: 40px;
     height: 40px;
-background: rgb(243, 233, 233)
+background: rgb(90, 9, 9)
+}
+
+.cell img {
+    width: 25px;
+    height: auto;
 }
 
 .mine {
 
-
     background-color: yellow;
 }
+
+.btn-level {
+height: 30px;
+width: 45px;
+margin-bottom: 30px;
+padding: auto;
+}
+
+
+.timer-container{
+    text-align: center;
+    color: red;
+    border:10px solid;
+    width: 200px;
+    margin: auto;
+    height: auto;
+  
+  }
+  
+  .game-level{
+      text-align: center;
+  }
