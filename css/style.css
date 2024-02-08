@@ -7,44 +7,81 @@ body {
 
 table {
     margin: auto;
+    background-color: gray;
     
+
 }
 
+td {
+    border: solid black;
+    width: 40px;
+    height: 40px;
+}
 
 .cell {
     width: 40px;
     height: 40px;
-background: rgb(90, 9, 9)
+    box-shadow: -9px -11px 10px 0px #00000070;
+    background: rgb(146, 135, 135)
+
+
+}
+
+.selected {
+
+    background: rgb(75, 69, 69)
+
+
+
 }
 
 .cell img {
     width: 25px;
     height: auto;
+
+
+
 }
 
 .mine {
 
-    background-color: yellow;
+    /* background-color: yellow; */
+    border:solid rgb(244, 10, 10);
+
+
+}
+
+.hide {
+
+/* display: none; */
+
+}
+
+.boom {
+
+background-color: aqua;
+
+
 }
 
 .btn-level {
-height: 30px;
-width: 45px;
-margin-bottom: 30px;
-padding: auto;
+    height: 30px;
+    width: 45px;
+    margin-bottom: 30px;
+    padding: auto;
 }
 
 
-.timer-container{
+.timer-container {
     text-align: center;
     color: red;
-    border:10px solid;
+    border: 10px solid;
     width: 200px;
     margin: auto;
     height: auto;
-  
-  }
-  
-  .game-level{
-      text-align: center;
-  }
+
+}
+
+.game-level {
+    text-align: center;
+}

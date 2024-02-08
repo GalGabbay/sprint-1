@@ -3,14 +3,18 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>MineSweeper</title>
 	<link rel="stylesheet" href="css/style.css" />
 
 </head>
-<body onkeyup="onHandleKey(event)" onload="onInit()">
-	<h4>Score: <span class="score">0</span></h4>
+<body onkeyup="onmousedown(event)" onload="onInit()">
+	<div class="timer-container">
+		Time: <span class="seconds">00</span>:
+		<span class="milli-seconds">000</span>
+	</div>
+	<h4>minesCount: <span class="score">0</span></h4>
 	<div class="game-level">
-		<h3>Game Level:</h3>
+		<h3>Mine Sweeper</h3>
 		<button class="btn-level" onclick="onSetLevel(4)">4</button>
 		<button class="btn-level" onclick="onSetLevel(8)">8</button>
 		<button class="btn-level" onclick="onSetLevel(12)">12</button>
@@ -21,7 +25,7 @@
 		<tbody class="board"></tbody>
 	</table>
 	
-
+	<span style="background-color:yellow"></span>
 	<script src="js/util.js"></script>
 	<script src="js/main.js"></script></body>
 </html>
