@@ -96,7 +96,7 @@ function onCellClick(elCell, i, j) {
 
     var cell = gBoard[i][j]
 
-    if (cell.isMine && gGame.showCount === 0) onInIt()
+    // if (cell.isMine && gGame.showCount === 0) onInIt()
 
     if (cell.isMine) {
         elCell.classList.add('mine')
@@ -104,7 +104,7 @@ function onCellClick(elCell, i, j) {
         checkGameOver()
     }
 
-    if (cell.isMarked) return
+    // if (cell.isMarked) return
 
 
 
@@ -112,15 +112,15 @@ function onCellClick(elCell, i, j) {
         elCell.innerHTML = cell.minesAroundCount
         cell.isShown = true
         elCell.classList.add('shown')
-        checkVictory()
+        // checkVictory()
     }
 
-    if (cell.isShown === false) {
+    if (cell.minesAroundCount === 0) {
 
         expand(elCell, i, j)
     }
 
-    checkVictory()
+    // checkVictory()
 }
 
 function expand(elCell, rowIdx, colIdx) {
@@ -181,8 +181,8 @@ function gameLevel(size, mines) {
 }
 
 function checkGameOver() {
-
     showAllMines()
+
     showModal('Game Over')
     gGame.isOn = false
 
