@@ -1,31 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>MineSweeper</title>
-	<link rel="stylesheet" href="css/style.css" />
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
 </head>
-<body onkeyup="onmousedown(event)" onload="onInit()">
-	<div class="timer-container">
-		Time: <span class="seconds">00</span>:
-		<span class="milli-seconds">000</span>
-	</div>
-	<h4>minesCount: <span class="score">0</span></h4>
-	<div class="game-level">
-		<h3>Mine Sweeper</h3>
-		<button class="btn-level" onclick="onSetLevel(4)">4</button>
-		<button class="btn-level" onclick="onSetLevel(8)">8</button>
-		<button class="btn-level" onclick="onSetLevel(12)">12</button>
-	</div>
+
+<body onload="onInIt()">
+    <h3>mine sweeper</h3>
+
+    <div class="btn-container">
+        <button class="btn" onclick="gameLevel(4,2)">Beginner</button>
+        <button class="btn" onclick="gameLevel(8,14)">Medium</button>
+        <button class="btn" onclick="gameLevel(12,32)">Expert</button>
+    </div>
+    <table>
+        <tbody class="board"></tbody>
+    </table>
+    <script src="js/main.js"></script>
+    <script src="js/util.js"></script>
+
+    <div class="modal">
+        <button class="btn" onclick="restart()"></button>
+        <h2></h2>
+    </div>
 
 
-	<table class="board-container">
-		<tbody class="board"></tbody>
-	</table>
-	
-	<span style="background-color:yellow"></span>
-	<script src="js/util.js"></script>
-	<script src="js/main.js"></script></body>
+</body>
+
 </html>
